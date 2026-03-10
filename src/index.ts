@@ -10,6 +10,7 @@ app.get('/', (_req: Request, res: Response) => {
 });
 
 app.get('/health', (_req: Request, res: Response) => {
+  throw new Error('test');
   res.json({ status: 'ok' });
 });
 
